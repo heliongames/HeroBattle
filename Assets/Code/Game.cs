@@ -29,7 +29,6 @@ public class Game : MonoBehaviour
         {
             if (_heroAttack == "sword" && _enemyAttack == "sword" || _heroAttack == "magic" && _enemyAttack == "magic" || _heroAttack == "shield" && _enemyAttack == "shield")
             {
-                print("tie");
                 ui.ShowTie();
             }
             else if (_heroAttack == "sword" && _enemyAttack == "magic")
@@ -136,7 +135,7 @@ public class Game : MonoBehaviour
 
     public void ToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SimpleSceneFader.ChangeSceneWithFade("Menu");
     }
     
     public void RestartGame()
