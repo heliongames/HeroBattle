@@ -7,11 +7,14 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
     private Ui ui;
-    public Char hero;
-    public Char enemy;
-    public float damage;
+    [SerializeField]
+    private Char hero;
+    [SerializeField]
+    private Char enemy;
+    [SerializeField]
+    private float damage;
     private bool isGame;
-
+    
     void Start()
     {
         ui = GetComponent<Ui>();

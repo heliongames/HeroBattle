@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-    
-    public CanvasGroup tutorialUI;
+    [SerializeField]
+    private CanvasGroup tutorialUI;
     public void PlayGame()
     {
         SimpleSceneFader.ChangeSceneWithFade("Game");
