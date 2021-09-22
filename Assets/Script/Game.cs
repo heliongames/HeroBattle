@@ -21,6 +21,10 @@ public class Game : MonoBehaviour
         isGame = true;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="_heroAttack"></param>
     public void DoAttack(string _heroAttack)
     {
         string _enemyAttack = GenerateEnemyAttackType();
